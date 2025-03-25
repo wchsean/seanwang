@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+
+}
+
+@layer base{
+  h2{
+    color: var(--color-textsecondary);
+  }
+  section{
+    background-color: rgba(0, 0, 0, 0.384)
+  }
+
+}
+
+@layer utilities {
+  @keyframes bg-pan-top {
+    0% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 50% 100%;
+    }
+  }
+
+  .bg-pan-top {
+    background: linear-gradient(180deg, #f8f2d1, #eef08d, #faad66, #e65050, #aa5b5b, #382727, #493838);
+    background-size: 100% 200%;
+    animation: bg-pan-top 3s infinite alternate;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
+
+body{
+
+  /*
+  background-image: url('../assets/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: local; 
+
+  background: linear-gradient(180deg, #6aabe7, #7a72e7, #f55be0, #d571ee);
+  background-size: 100% 200%;
+  animation: bg-pan-top 7s infinite alternate;*/
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@theme {
+  --color-textprimary: rgb(230, 230, 230) ;
+  --color-textsecondary: rgb(270, 300, 300) ;
+  --color-primary-100: hsl(270, 40%, 30%);
+  --color-change:linear-gradient(180deg, #d876f7, #d472e7, #f55be0, #d03cf5);
+  --color-changeblue:linear-gradient(180deg, #6aabe7, #7a72e7, #f55be0, #d571ee);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
