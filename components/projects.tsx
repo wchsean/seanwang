@@ -9,54 +9,34 @@ import { ExternalLink, Github, Leaf } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
-      title: "Hospital Appointment System API",
+      title: "Secure Personal Cloud & NAS Infrastructure",
       description:
-        "Django REST API for booking appointments between patients and doctors with role-based access, JWT authentication, and PostgreSQL backend.",
-      techStack: ["Django", "DRF", "PostgreSQL", "JWT", "Docker"],
-      github: "#",
-      demo: "#",
-      blog: null,
-      image: "/placeholder.svg?height=200&width=400",
-    },
-    {
-      title: "Task Manager API",
-      description:
-        "A comprehensive task management API with user authentication, task categories, priorities, and deadline notifications.",
-      techStack: ["Django", "DRF", "PostgreSQL", "Celery", "Redis"],
-      github: "#",
-      demo: "#",
-      blog: null,
-      image: "/placeholder.svg?height=200&width=400",
-    },
-    {
-      title: "Dockerized API + CI/CD Example",
-      description:
-        "A template project demonstrating best practices for containerizing Django APIs and setting up continuous integration/deployment.",
-      techStack: ["Docker", "GitHub Actions", "Django", "AWS"],
-      github: "#",
+        "• Personal NAS on Unraid secured with FortiGate Firewall & VPN \n• Deployed Dockerized services with Nginx reverse proxy \n• Applied ISO 27001 principles for data protection",
+      techStack: ["Unraid", "FortiGate", "VPN", "Docker", "Nextcloud"],
+      github: null,
       demo: null,
-      blog: "#",
-      image: "/placeholder.svg?height=200&width=400",
-    },
-    {
-      title: "Real-time Collaboration Tool",
-      description:
-        "API backend for a collaborative workspace with real-time updates, document sharing, and team management.",
-      techStack: ["Django", "Channels", "WebSockets", "PostgreSQL"],
-      github: "#",
-      demo: "#",
       blog: null,
-      image: "/placeholder.svg?height=200&width=400",
+      image: "/images/nas.png?height=200&width=400",
     },
     {
-      title: "LiveStatusAPI with OpenAPI Docs",
+      title: "Pet Grooming Appointment System",
       description:
-        "A service status monitoring API with comprehensive OpenAPI documentation and interactive testing interface.",
-      techStack: ["Django", "DRF", "Swagger", "Redis"],
-      github: "#",
-      demo: "#",
-      blog: "#",
-      image: "/placeholder.svg?height=200&width=400",
+        "• Full-stack React + PostgreSQL platform for a local salon \n• Migrated 200+ Excel records using Python\n• Now used daily, reducing booking time by 40% ",
+      techStack: ["React", "PostgreSQL", "Python", "Node.js", "Docker"],
+      github: null,
+      demo: null,
+      blog: null,
+      image: "/images/petAppointment.png?height=200&width=400",
+    },
+    {
+      title: "Nutrition Tracking Website",
+      description:
+        "• Mobile-first static website using HTML, CSS, and JavaScript \n• Hosted via Docker + Nginx with HTTPS\n• Designed for local use with privacy in mind",
+      techStack: ["HTML", "JavaScript", "CSS", "Nginx"],
+      github: null,
+      demo: null,
+      blog: null,
+      image: "/images/dietWeb.png?height=200&width=400",
     },
   ]
 
@@ -76,7 +56,7 @@ export default function Projects() {
             <Leaf className="h-6 w-6 text-jungle-500 dark:text-jungle-400" />
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            A showcase of my backend development work, featuring Django REST APIs and related technologies.
+            Each project taught me something new — here are the ones I’m proud to share.
           </p>
           <div className="h-1 w-20 bg-jungle-500 mx-auto mt-4"></div>
         </motion.div>

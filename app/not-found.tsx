@@ -39,19 +39,22 @@ export default function NotFound() {
             <div className="text-center">
               <div className="flex justify-center mb-6">
                 <img
-                  src="/images/kihuni.png"
-                  alt="Stephen Kihuni - Lost in the Django Jungle"
+                  src="/images/sean.png"
+                  alt="sean - Lost the connect"
                   className="w-32 h-32 object-contain"
                 />
               </div>
               <h1 className="text-6xl font-bold text-white mb-2">404</h1>
-              <h2 className="text-2xl font-semibold text-jungle-200 mb-4">Lost in the Django Jungle</h2>
+              <h2 className="text-2xl font-semibold text-jungle-200 mb-4">Lost in the World</h2>
               <p className="text-slate-200 mb-8">
-                Oops! It seems you've wandered off the path. This page doesn't exist in our jungle.
+                You’ve drifted off the map. This page doesn’t seem to exist — or maybe it never did.
+
+                But don’t worry. Even the best explorers get turned around sometimes.
+                Let’s find your way back to something real.
               </p>
               <Button asChild className="bg-jungle-600 hover:bg-jungle-700 text-white">
                 <Link href="/">
-                  <Leaf className="mr-2 h-4 w-4" /> Return to Base Camp
+                  <Leaf className="mr-2 h-4 w-4" /> Back to the world you know
                 </Link>
               </Button>
             </div>
@@ -66,7 +69,7 @@ export default function NotFound() {
       {/* Jungle background */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url('/images/django-jungle.png')` }}
+        style={{ backgroundImage: `url('/images/background.png')` }}
       />
 
       {/* Floating leaves - only rendered client-side */}
@@ -105,21 +108,24 @@ export default function NotFound() {
               transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
             >
               <img
-                src="/images/kihuni.png"
-                alt="Stephen Kihuni - Lost in the Django Jungle"
+                src="/images/sean.png"
+                alt="Sean Wang - Lost in the World"
                 className="w-32 h-32 object-contain"
               />
             </motion.div>
 
             <h1 className="text-6xl font-bold text-white mb-2">404</h1>
-            <h2 className="text-2xl font-semibold text-jungle-200 mb-4">Lost in the Django Jungle</h2>
+            <h2 className="text-2xl font-semibold text-jungle-200 mb-4">Lost in the World</h2>
             <p className="text-slate-200 mb-8">
-              Oops! It seems you've wandered off the path. This page doesn't exist in our jungle.
+                You’ve drifted off the map. This page doesn’t seem to exist — or maybe it never did.
+
+                But don’t worry. Even the best explorers get turned around sometimes.
+                Let’s find your way back to something real.
             </p>
 
             <Button asChild className="bg-jungle-600 hover:bg-jungle-700 text-white">
               <Link href="/">
-                <Leaf className="mr-2 h-4 w-4" /> Return to Base Camp
+                <Leaf className="mr-2 h-4 w-4" /> Back to the world you know
               </Link>
             </Button>
           </div>

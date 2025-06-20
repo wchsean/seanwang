@@ -16,7 +16,6 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Services", href: "#services" },
-    { name: "Blog", href: "#blog" },
     { name: "Contact", href: "#contact" },
   ]
 
@@ -48,7 +47,7 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
             <div className="flex items-center gap-2">
-              <img src="/images/kihuni.png" alt="Stephen Kihuni" className="h-10 w-10 rounded-md" />
+              <img src="/images/sean.png" alt="Sean Wang" className="h-10 w-10 rounded-md" />
               <div className="font-bold text-xl text-slate-800 dark:text-white flex items-center">
                 Sean<span className="text-jungle-500 dark:text-jungle-300">Wang</span>
                 <Leaf className="h-4 w-4 ml-1 text-jungle-500 dark:text-jungle-300" />

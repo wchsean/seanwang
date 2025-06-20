@@ -49,19 +49,22 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4">Let’s Build Something Together</h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss how I can help your business? Let's talk!
+            Whether you're hiring, collaborating, or just want to connect — I’d love to hear from you.
           </p>
           <div className="h-1 w-20 bg-emerald-500 mx-auto mt-4"></div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        {/* 原本是 lg:grid-cols-2 改成1因為沒表單*/}
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
+            // className是加上的因為沒表單
+            className="justify-self-center"
           >
             <Card className="border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 h-full">
               <CardContent className="p-6">
@@ -74,7 +77,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="text-sm text-slate-500 dark:text-slate-400">Email</p>
-                      <p className="text-slate-800 dark:text-white font-medium">stephen.kihuni@example.com</p>
+                      <p className="text-slate-800 dark:text-white font-medium">wchsean@gmail.com</p>
                     </div>
                   </div>
 
@@ -82,14 +85,14 @@ export default function Contact() {
                     <h4 className="text-lg font-semibold text-slate-800 dark:text-white mb-4">Connect with me</h4>
                     <div className="flex gap-4">
                       <a
-                        href="#"
+                        href="https://www.linkedin.com/in/jheng-siang-wang-227292294/"
                         className="bg-slate-100 dark:bg-slate-800 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
                         aria-label="LinkedIn"
                       >
                         <Linkedin className="h-5 w-5 text-slate-700 dark:text-slate-300" />
                       </a>
                       <a
-                        href="#"
+                        href="https://github.com/wchsean"
                         className="bg-slate-100 dark:bg-slate-800 p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
                         aria-label="GitHub"
                       >
@@ -109,7 +112,7 @@ export default function Contact() {
             </Card>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -177,7 +180,7 @@ export default function Contact() {
                         name="message"
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder="Tell me about your project..."
+                        placeholder="Tell me about what you think..."
                         required
                         className="min-h-[150px] bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700"
                       />
@@ -194,7 +197,7 @@ export default function Contact() {
                 )}
               </CardContent>
             </Card>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

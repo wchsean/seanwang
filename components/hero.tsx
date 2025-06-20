@@ -42,7 +42,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{
-          backgroundImage: `url('/images/django-jungle.png')`,
+          backgroundImage: `url('/images/background.png')`,
           transform: isMounted
             ? `translateX(${mousePosition.x * -20}px) translateY(${mousePosition.y * -20}px)`
             : "none",
@@ -90,7 +90,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05 }}
             >
               <img
-                src="/images/kihuni.png"
+                src="/images/sean.png"
                 alt="Sean Wang - Cybersecurity Meets Full-Stack Innovation"
                 className="w-full h-full object-contain drop-shadow-xl"
               />

@@ -3,43 +3,32 @@
 import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Database, Lock, Server, Settings, Workflow, Leaf } from "lucide-react"
+import { Database, Lock, Server, PanelTop, Settings, Workflow, Leaf } from "lucide-react"
 
 export default function Services() {
   const services = [
     {
-      title: "Django REST API Development",
+      title: "Full-Stack Development",
       description:
-        "Custom API development with Django REST Framework, following best practices for security, performance, and maintainability.",
-      icon: <Server className="h-10 w-10 text-jungle-500" />,
+        "• Build scalable and maintainable web applications using React, Node.js, and PostgreSQL.",
+      icon: <PanelTop  className="h-10 w-10 text-jungle-500" />,
     },
     {
-      title: "API Authentication (JWT/OAuth2)",
-      description: "Implement secure authentication systems using industry-standard protocols like JWT and OAuth2.",
+      title: "Secure System Architecture ",
+      description: "• Design secure networks and applications using ISO 27001, NIST CSF, FortiGate Firewall, and VPNs.",
       icon: <Lock className="h-10 w-10 text-jungle-500" />,
     },
     {
-      title: "Database Design & Optimization",
+      title: "Containerization & DevOps",
       description:
-        "Design efficient database schemas and optimize queries for PostgreSQL, MySQL, and other database systems.",
+        "• Deploy applications with Docker, Nginx, and secure reverse proxy configurations.",
       icon: <Database className="h-10 w-10 text-jungle-500" />,
     },
     {
-      title: "Dockerization & CI/CD Setup",
+      title: "Data Integration & Automation",
       description:
-        "Containerize your applications with Docker and set up continuous integration and deployment pipelines.",
-      icon: <Workflow className="h-10 w-10 text-jungle-500" />,
-    },
-    {
-      title: "Cloud Deployment",
-      description: "Deploy your applications to Heroku, AWS, or Render with proper configuration and monitoring.",
+        "• Migrate and process structured business data using Python, PostgreSQL, and scripting tools.",
       icon: <Server className="h-10 w-10 text-jungle-500" />,
-    },
-    {
-      title: "Bug Fixing & Backend Refactoring",
-      description:
-        "Identify and fix bugs in existing systems, and refactor code for better performance and maintainability.",
-      icon: <Settings className="h-10 w-10 text-jungle-500" />,
     },
   ]
 
@@ -84,11 +73,11 @@ export default function Services() {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-white mb-4 flex items-center justify-center gap-2">
             <Leaf className="h-6 w-6 text-jungle-500 dark:text-jungle-400" />
-            Services Offered
+            Services
             <Leaf className="h-6 w-6 text-jungle-500 dark:text-jungle-400" />
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Specialized backend development services to help your business build robust and scalable systems.
+            From database design to deployment — I help you build systems that scale, last, and stay secure.
           </p>
           <div className="h-1 w-20 bg-jungle-500 mx-auto mt-4"></div>
         </motion.div>

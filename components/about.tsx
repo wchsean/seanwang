@@ -7,11 +7,11 @@ import { Leaf } from "lucide-react"
 export default function About() {
   const skills = [
     { name: "Python", icon: <span className="text-2xl">🐍</span>, color: "bg-blue-100 dark:bg-blue-900" },
-    { name: "Django/DRF", icon: <span className="text-2xl">🌐</span>, color: "bg-jungle-100 dark:bg-jungle-900" },
+    { name: "Nginx", icon: <span className="text-2xl">🌐</span>, color: "bg-jungle-100 dark:bg-jungle-900" },
     { name: "PostgreSQL", icon: <span className="text-2xl">🐘</span>, color: "bg-indigo-100 dark:bg-indigo-900" },
     { name: "Docker", icon: <span className="text-2xl">🐳</span>, color: "bg-cyan-100 dark:bg-cyan-900" },
-    { name: "AWS/Heroku", icon: <span className="text-2xl">☁️</span>, color: "bg-orange-100 dark:bg-orange-900" },
-    { name: "JWT/OAuth2", icon: <span className="text-2xl">🛡️</span>, color: "bg-red-100 dark:bg-red-900" },
+    { name: "NAS", icon: <span className="text-2xl">☁️</span>, color: "bg-orange-100 dark:bg-orange-900" },
+    { name: "Network Security", icon: <span className="text-2xl">🛡️</span>, color: "bg-red-100 dark:bg-red-900" },
   ]
 
   return (
@@ -21,7 +21,7 @@ export default function About() {
         <div
           className="absolute inset-0 bg-contain"
           style={{
-            backgroundImage: `url('/images/django-jungle.png')`,
+            backgroundImage: `url('/images/background.png')`,
             backgroundPosition: "center",
             backgroundSize: "80%",
             backgroundRepeat: "no-repeat",
@@ -60,14 +60,14 @@ export default function About() {
                 transition={{ duration: 10, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               >
                 <img
-                  src="/images/kihuni.png"
-                  alt="Stephen Kihuni - Backend Developer"
+                  src="/images/sean.png"
+                  alt="Sean Wang - Backend Developer"
                   className="w-full h-full object-contain p-4"
                 />
               </motion.div>
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-jungle-900/90 to-transparent p-6">
-                <h3 className="text-white text-xl font-bold">Stephen Kihuni</h3>
-                <p className="text-jungle-200">Django Jungle Explorer</p>
+                <h3 className="text-white text-xl font-bold">Sean Wang</h3>
+                <p className="text-jungle-200">a Full-Stack Developer and Cybersecurity Specialist</p>
               </div>
             </div>
           </motion.div>
@@ -80,15 +80,16 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-slate-700 dark:text-slate-300">
-              I'm Stephen Kihuni — a backend developer with over 2 years of experience building robust and
-              production-ready APIs with Django and Python.
+              Hi, I’m Sean Wang — a Full-Stack Developer and Cybersecurity Specialist based in Australia, with a Master’s in Cybersecurity and a passion for building reliable, secure systems.
+
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300">
-              I specialize in RESTful API development, database design, authentication systems, Dockerized deployments,
-              and CI/CD pipelines.
+              I started out tinkering with hardware and building my own NAS. Since then, I’ve designed scalable appointment platforms, migrated legacy data into PostgreSQL, and built secure self-hosted cloud infrastructure using Docker and FortiGate firewalls.
+
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300">
-              When I'm not building systems, I contribute to open source and teach Django in local dev communities.
+              I specialize in full-stack development using React, PostgreSQL, and Node.js — with security-first architecture at the core. Whether streamlining operations for small businesses or hardening cloud access, I deliver solutions that create measurable impact.
+
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">

@@ -7,12 +7,11 @@ import Navbar from "@/components/navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Stephen Kihuni | Backend Developer",
-  description: "Backend Developer specializing in Django REST APIs",
+  title: "sean | I can meow",
+  description: "Software Developer",
   icons: {
-    icon: [{ url: "/images/kihuni.png" }],
+    icon: [{ url: "/images/sean.png" }],
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -23,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Navbar />
           {children}
         </ThemeProvider>
