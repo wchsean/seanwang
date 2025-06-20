@@ -56,14 +56,14 @@ export default function Hero() {
             key={i}
             className="absolute text-jungle-300 opacity-30 z-10"
             initial={{
-              x: Math.random() * dimensions.width,
-              y: -20,
+              x: dimensions.width* (Math.random() * 2 - 1),
+              y: -dimensions.height,
               rotate: Math.random() * 360,
               scale: 0.5 + Math.random() * 1.5,
             }}
             animate={{
-              y: dimensions.height + 50,
-              x: `calc(${Math.random() * 100}vw + ${Math.sin(i) * 100}px)`,
+              y: dimensions.height ,
+              x: dimensions.width* (Math.random() * 2 - 1)+ Math.sin(i) * 50,
               rotate: Math.random() * 360 + 180,
             }}
             transition={{

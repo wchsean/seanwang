@@ -16,7 +16,7 @@ export default function Projects() {
       github: null,
       demo: null,
       blog: null,
-      image: "/images/nas.png?height=200&width=400",
+      image: "/images/projects/nas.png?height=200&width=400",
     },
     {
       title: "Pet Grooming Appointment System",
@@ -26,7 +26,7 @@ export default function Projects() {
       github: null,
       demo: null,
       blog: null,
-      image: "/images/petAppointment.png?height=200&width=400",
+      image: "/images/projects/petAppointment.png?height=200&width=400",
     },
     {
       title: "Nutrition Tracking Website",
@@ -36,7 +36,37 @@ export default function Projects() {
       github: null,
       demo: null,
       blog: null,
-      image: "/images/dietWeb.png?height=200&width=400",
+      image: "/images/projects/dietWeb.png?height=200&width=400",
+    },
+    {
+      title: "Calendar Generator for Excel",
+      description:
+        "A dynamic Excel-based calendar system built with VBA, designed to automate daily schedule creation and holiday visualization. Users can define a custom date range and exclude specific dates, which the tool uses to generate individual daily sheets from a predefined template. The current day is automatically highlighted, and holidays are managed via a dedicated \"Holiday\" sheet — allowing color-coded labels and flexible tagging.",
+      techStack: ["Excel VBA", "Excel Formulas", "Conditional Formatting", "Worksheet Generation"],
+      github: null,
+      demo: null,
+      blog: null,
+      image: "/images/projects/excelCalendar.png?height=200&width=400",
+    },
+    {
+      title: "Self-Hosted Nextcloud with Secure Remote Access",
+      description:
+        "A fully self-hosted personal cloud solution using Nextcloud, configured for secure remote access via VPN and HTTPS. The server is reverse-proxied through Nginx Proxy Manager and equipped with valid SSL/TLS certificates, allowing seamless connection from the Nextcloud mobile and desktop apps. Integrated Collabora Office via Docker enables real-time online editing of Word documents directly in the cloud, creating a full-featured, secure private alternative to mainstream cloud services.",
+      techStack: ["Nextcloud", "Nginx Proxy Manager", "VPN", "SSL/TLS Certificates (Let's Encrypt)","Collabora","Docker","Self-hosted NAS"],
+      github: null,
+      demo: null,
+      blog: null,
+      image: "/images/projects/nextcloud.png?height=200&width=400",
+    },
+    {
+      title: "Job Scraper with Keyword Filtering & MongoDB Storage",
+      description:
+        "A Python-based web scraper built to automate job hunting on SEEK. The script fetches job listings, filters titles and descriptions based on inclusion/exclusion keywords, and extracts the most relevant content snippets. Matching results are structured and stored in MongoDB via Mongoose.",
+      techStack: ["Python", "MongoDB", "Mongoose", "BeautifulSoup","selenium","Docker"],
+      github: null,
+      demo: null,
+      blog: null,
+      image: "/images/projects/pythonJobScraper.png?height=200&width=400",
     },
   ]
 
@@ -99,11 +129,13 @@ export default function Projects() {
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="flex gap-2 pt-2">
+                  {project.github && (
                   <Button variant="outline" size="sm" asChild className="border-jungle-200 dark:border-jungle-700">
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-1" /> GitHub
                     </a>
                   </Button>
+                  )}
                   {project.demo && (
                     <Button variant="outline" size="sm" asChild className="border-jungle-200 dark:border-jungle-700">
                       <a href={project.demo} target="_blank" rel="noopener noreferrer">
