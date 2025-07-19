@@ -23,8 +23,8 @@ export default function Projects() {
       description:
         "• Full-stack React + PostgreSQL platform for a local salon \n• Migrated 200+ Excel records using Python\n• Now used daily, reducing booking time by 40% ",
       techStack: ["React", "PostgreSQL", "Python", "Node.js", "Docker"],
-      github: null,
-      demo: null,
+      github: "https://github.com/wchsean/PetGroomingAppointment.git",
+      demo: "https://pet-grooming-appointment-dgm5-lt3s7m7z3.vercel.app",
       blog: null,
       image: "/images/projects/petAppointment.png?height=200&width=400",
     },
@@ -41,9 +41,9 @@ export default function Projects() {
     {
       title: "Calendar Generator for Excel",
       description:
-        "A dynamic Excel-based calendar system built with VBA, designed to automate daily schedule creation and holiday visualization. Users can define a custom date range and exclude specific dates, which the tool uses to generate individual daily sheets from a predefined template. The current day is automatically highlighted, and holidays are managed via a dedicated \"Holiday\" sheet — allowing color-coded labels and flexible tagging.",
+        "A dynamic Excel-based calendar system built with VBA, designed to automate daily schedule creation and holiday visualization.\n Users can define a custom date range and exclude specific dates, which the tool uses to generate individual daily sheets from a predefined template. The current day is automatically highlighted, and holidays are managed via a dedicated \"Holiday\" sheet — allowing color-coded labels and flexible tagging.",
       techStack: ["Excel VBA", "Excel Formulas", "Conditional Formatting", "Worksheet Generation"],
-      github: null,
+      github: "https://github.com/wchsean/CalendarGeneratorForExcel.git",
       demo: null,
       blog: null,
       image: "/images/projects/excelCalendar.png?height=200&width=400",
@@ -51,7 +51,7 @@ export default function Projects() {
     {
       title: "Self-Hosted Nextcloud with Secure Remote Access",
       description:
-        "A fully self-hosted personal cloud solution using Nextcloud, configured for secure remote access via VPN and HTTPS. The server is reverse-proxied through Nginx Proxy Manager and equipped with valid SSL/TLS certificates, allowing seamless connection from the Nextcloud mobile and desktop apps. Integrated Collabora Office via Docker enables real-time online editing of Word documents directly in the cloud, creating a full-featured, secure private alternative to mainstream cloud services.",
+        "A fully self-hosted personal cloud solution using Nextcloud, configured for secure remote access via VPN and HTTPS. The server is reverse-proxied through Nginx Proxy Manager and equipped with valid SSL/TLS certificates, allowing seamless connection from the Nextcloud mobile and desktop apps.\n Integrated Collabora Office via Docker enables real-time online editing of Word documents directly in the cloud, creating a full-featured, secure private alternative to mainstream cloud services.",
       techStack: ["Nextcloud", "Nginx Proxy Manager", "VPN", "SSL/TLS Certificates (Let's Encrypt)","Collabora","Docker","Self-hosted NAS"],
       github: null,
       demo: null,
@@ -59,14 +59,24 @@ export default function Projects() {
       image: "/images/projects/nextcloud.png?height=200&width=400",
     },
     {
-      title: "Job Scraper with Keyword Filtering & MongoDB Storage",
+      title: "Scraper with Keyword Filtering & MongoDB Storage",
       description:
-        "A Python-based web scraper built to automate job hunting on SEEK. The script fetches job listings, filters titles and descriptions based on inclusion/exclusion keywords, and extracts the most relevant content snippets. Matching results are structured and stored in MongoDB via Mongoose.",
+        "A Python-based web scraper built to automate search on web pages.\n The script fetches key word listings, filters titles and descriptions based on inclusion/exclusion keywords, and extracts the most relevant content snippets. Matching results are structured and stored in MongoDB via Mongoose.",
       techStack: ["Python", "MongoDB", "Mongoose", "BeautifulSoup","selenium","Docker"],
       github: null,
       demo: null,
       blog: null,
-      image: "/images/projects/pythonJobScraper.png?height=200&width=400",
+      image: "/images/projects/chris-ried-ieic5Tq8YMk-unsplash.jpg?height=200&width=400",
+    },
+    {
+      title: "Pet Data Cleaner for Legacy Grooming Records",
+      description: 
+        "A Python-based utility designed to clean and transform legacy pet grooming data into a consistent, database-ready format.",
+      techStack: ["Python", "Pandas", "PostgreSQL", "Data Cleaning", "CSV Processing"],
+      github: "https://github.com/wchsean/petDataCleaner.git",
+      demo: null,
+      blog: null,
+      image: "/images/projects/chris-ried-ieic5Tq8YMk-unsplash.jpg?height=200&width=400",
     },
   ]
 
@@ -124,7 +134,7 @@ export default function Projects() {
                   </div>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <CardDescription className="text-slate-600 dark:text-slate-300 text-base">
+                  <CardDescription className="text-slate-600 dark:text-slate-300 text-base whitespace-pre-line">
                     {project.description}
                   </CardDescription>
                 </CardContent>

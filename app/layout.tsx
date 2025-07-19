@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "sean | I can meow",
+  title: "sean | I can meow meow meow~",
   description: "Software Developer",
   icons: {
     icon: [{ url: "/images/sean.png" }],
